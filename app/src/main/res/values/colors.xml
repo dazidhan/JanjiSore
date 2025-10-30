@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna utama berdasarkan tema kopi -->
+    <color name="primary_brown">#6F4E37</color>
+    <color name="primary_dark_brown">#5D4037</color>
+    <color name="accent_gold">#D4AF37</color>
+    <color name="light_beige">#F5F5DC</color>
+
+    <!-- Warna untuk minuman dingin -->
+    <color name="cool_blue">#4FC3F7</color>
+
+    <!-- Warna untuk minuman panas -->
+    <color name="warm_red">#FF7043</color>
+
+    <!-- Warna netral -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_dark">#333333</color>
+    <color name="text_gray">#757575</color>
+</resources>

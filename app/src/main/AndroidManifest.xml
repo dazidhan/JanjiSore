@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.JanjiSore"
+        tools:targetApi="31">
+        <activity
+            android:name=".ThemesActivity2"
+            android:exported="false" />
+        <!-- Welcome Activity (Launcher) -->
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.JanjiSore">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Auth Activity -->
+        <activity
+            android:name=".AuthActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Login Activity -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Register Activity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Home Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Add Address Activity -->
+        <activity
+            android:name=".AddAddressActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Checkout Address Activity -->
+        <activity
+            android:name=".CheckoutAddressActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- Order Confirmation Activity -->
+        <activity
+            android:name=".OrderConfirmationActivity"
+            android:theme="@style/Theme.JanjiSore" /> <!-- New Activities for Order Flow -->
+        <activity
+            android:name=".OrderActivity"
+            android:theme="@style/Theme.JanjiSore" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:theme="@style/Theme.JanjiSore" />
+        <activity
+            android:name=".SuccessActivity"
+            android:theme="@style/Theme.JanjiSore" />
+    </application>
+
+</manifest>
