@@ -37,44 +37,44 @@ Berikut adalah beberapa tampilan dari alur aplikasi JanjiSore
 <table align="center">
   <tr>
     <td align="center">
-      <strong>Halaman Utama (Splash)</strong><br>
-      <img src="path/to/screenshot_splash.png" alt="Tampilan Halaman Utama/Splash" width="250px"/>
+      <strong>Halaman Utama</strong><br>
+      <img src="image/home.jpeg" alt="Tampilan Halaman Utama/Splash" width="150px"/>
     </td>
     <td align="center">
       <strong>Pilihan Login/Register</strong><br>
-      <img src="path/to/screenshot_auth.png" alt="Tampilan Pilihan Otorisasi" width="250px"/>
+      <img src="image/loginOrRegister.jpeg" alt="Tampilan Pilihan Otorisasi" width="150px"/>
     </td>
     <td align="center">
       <strong>Halaman Register</strong><br>
-      <img src="path/to/screenshot_register.png" alt="Tampilan Register" width="250px"/>
+      <img src="image/register.jpeg" alt="Tampilan Register" width="150px"/>
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Halaman Login</strong><br>
-      <img src="path/to/screenshot_login.png" alt="Tampilan Login" width="250px"/>
+      <img src="image/login.jpeg" alt="Tampilan Login" width="150px"/>
     </td>
     <td align="center">
       <strong>Halaman Menu</strong><br>
-      <img src="path/to/screenshot_menu.png" alt="Tampilan Menu Minuman" width="250px"/>
+      <img src="image/menu.jpeg" alt="Tampilan Menu Minuman" width="150px"/>
     </td>
     <td align="center">
       <strong>Halaman Profil</strong><br>
-      <img src="path/to/screenshot_profile.png" alt="Tampilan Profil Pengguna" width="250px"/>
+      <img src="image/alamat.jpeg" alt="Tampilan Profil Pengguna" width="150px"/>
     </td>
   </tr>
   <tr>
     <td align="center">
       <strong>Alamat Pengiriman</strong><br>
-      <img src="path/to/screenshot_address.png" alt="Tampilan Alamat Pengiriman" width="250px"/>
+      <img src="image/alamatPengiriman.jpeg" alt="Tampilan Alamat Pengiriman" width="150px"/>
     </td>
     <td align="center">
       <strong>Halaman Checkout</strong><br>
-      <img src="path/to/screenshot_checkout.png" alt="Tampilan Checkout" width="250px"/>
+      <img src="image/checkout.jpeg" alt="Tampilan Checkout" width="150px"/>
     </td>
     <td align="center">
       <strong>Pemesanan Sukses</strong><br>
-      <img src="path/to/screenshot_success.png" alt="Tampilan Pemesanan Sukses" width="250px"/>
+      <img src="image/sukses.jpeg" alt="Tampilan Pemesanan Sukses" width="250px"/>
     </td>
   </tr>
 </table>
@@ -101,3 +101,4 @@ Jika Anda ingin berkontribusi atau sekadar mencoba aplikasi ini, ikuti langkah-l
 ## 👤 Kontributor
 
 * **[dazidhan](https://github.com/dazidhan)** - Pengembang Utama
+
