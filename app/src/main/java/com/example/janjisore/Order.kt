@@ -4,9 +4,12 @@ import java.io.Serializable
 
 data class Order(
     val drinkName: String,
-    val quantity: Int,
+    var quantity: Int,
     val price: Int,
     var notes: String = ""
 ) : Serializable {
-    fun getTotalPrice(): Int = price * quantity
+
+    fun getTotalPrice(): Int {
+        return quantity * price
+    }
 }

@@ -8,9 +8,9 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.JanjiSore"
         tools:targetApi="31">
-        <activity
-            android:name=".ThemesActivity2"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ThemesActivity2"-->
+<!--            android:exported="false" />-->
         <!-- Welcome Activity (Launcher) -->
         <activity
             android:name=".WelcomeActivity"

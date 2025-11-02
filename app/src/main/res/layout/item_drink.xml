@@ -7,7 +7,7 @@
     android:background="@android:color/white">
 
     <ImageView
-        android:id="@+id/ivDrink"
+        android:id="@+id/ivDrinkImage"
         android:layout_width="60dp"
         android:layout_height="60dp"
         android:src="@android:drawable/ic_menu_gallery"

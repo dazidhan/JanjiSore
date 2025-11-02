@@ -34,34 +34,31 @@ class CheckoutActivity : AppCompatActivity() {
         btnOrderAndPay = findViewById(R.id.btnOrderAndPay)
     }
 
-    // CheckoutActivity.kt
     private fun setupClickListeners() {
         btnOrderAndPay.setOnClickListener {
             if (validateForm()) {
-                // 1. Buat intent baru untuk ke OrderConfirmationActivity
-                val newIntent = Intent(this, OrderConfirmationActivity::class.java)
+                val intent = Intent(this, OrderConfirmationActivity::class.java)
 
-                // 2. Pass data alamat ke intent baru
-                newIntent.putExtra("FULL_NAME", etFullName.text.toString())
-                newIntent.putExtra("ADDRESS", etAddress.text.toString())
-                newIntent.putExtra("ADDRESS_NOTES", etAddressNotes.text.toString())
+                // Pass data alamat
+                intent.putExtra("FULL_NAME", etFullName.text.toString())
+                intent.putExtra("ADDRESS", etAddress.text.toString())
+                intent.putExtra("ADDRESS_NOTES", etAddressNotes.text.toString())
 
-                // 3. Ambil data "ORDERS" dari intent LAMA (intent milik activity ini)
-                //    Gunakan 'this.intent' atau cukup 'intent'
-                val incomingOrders = this.intent.getSerializableExtra("ORDERS") as? ArrayList<Order>
+                // Ambil data dari intent yang MASUK (yang memulai activity ini)
+                val incomingOrders = intent.getSerializableExtra("ORDERS") as? ArrayList<Order>
 
                 if (incomingOrders != null) {
-                    // 4. Masukkan data orders ke intent BARU
-                    newIntent.putExtra("ORDERS", incomingOrders)
+                    // Teruskan data orders ke intent yang KELUAR
+                    intent.putExtra("ORDERS", incomingOrders)
                     println("DEBUG: Sending ${incomingOrders.size} orders to OrderConfirmation")
                 } else {
                     // Fallback jika tidak ada data orders
                     val defaultOrder = Order("Kopi Susu Gula Aren", 1, 25000)
-                    newIntent.putExtra("ORDERS", ArrayList(listOf(defaultOrder)))
+                    intent.putExtra("ORDERS", ArrayList(listOf(defaultOrder)))
                     println("DEBUG: Using default order")
                 }
 
-                startActivity(newIntent)
+                startActivity(intent)
             }
         }
     }

@@ -21,11 +21,12 @@ class OrderActivity : AppCompatActivity() {
         setContentView(R.layout.activity_order)
 
         initViews()
+
+        // Get data dari intent HARUS SEBELUM setupRecyclerView
+        selectedDrink = intent.getSerializableExtra("SELECTED_DRINK") as? Drink
+
         setupRecyclerView()
         setupClickListeners()
-
-        // Get data dari intent
-        selectedDrink = intent.getSerializableExtra("SELECTED_DRINK") as? Drink
     }
 
     private fun initViews() {

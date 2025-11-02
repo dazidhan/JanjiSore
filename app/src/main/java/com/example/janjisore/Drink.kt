@@ -7,5 +7,6 @@ data class Drink(
     val category: String,
     val description: String,
     val price: Int,
-    val temperature: String // "Hot" atau "Cold"
+    val temperature: String,
+    val imageResId: Int // Tambahkan field ini
 ) : Serializable

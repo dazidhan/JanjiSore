@@ -72,6 +72,10 @@ class OrderConfirmationActivity : AppCompatActivity() {
                 tvDrink2Qty.text = "${secondOrder.quantity}x"
                 tvDrink2Name.visibility = TextView.VISIBLE
                 tvDrink2Qty.visibility = TextView.VISIBLE
+            } else {
+                // Sembunyikan jika tidak ada minuman kedua
+                tvDrink2Name.visibility = TextView.GONE
+                tvDrink2Qty.visibility = TextView.GONE
             }
 
             // Hitung total harga
@@ -84,6 +88,11 @@ class OrderConfirmationActivity : AppCompatActivity() {
             tvDrink1Name.text = "Kopi Susu Gula Aren"
             tvDrink1Qty.text = "1x"
             tvTotalPrice.text = "Rp 25.000"
+
+            // Sembunyikan minuman kedua
+            tvDrink2Name.visibility = TextView.GONE
+            tvDrink2Qty.visibility = TextView.GONE
+
             println("DEBUG OrderConfirmation: Using default data")
         }
     }

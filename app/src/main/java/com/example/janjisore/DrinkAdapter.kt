@@ -4,6 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
@@ -14,10 +15,11 @@ class DrinkAdapter(
 ) : RecyclerView.Adapter<DrinkAdapter.DrinkViewHolder>() {
 
     class DrinkViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        val ivDrinkImage: ImageView = itemView.findViewById(R.id.ivDrinkImage)
         val tvDrinkName: TextView = itemView.findViewById(R.id.tvDrinkName)
         val tvDrinkDescription: TextView = itemView.findViewById(R.id.tvDrinkDescription)
         val tvDrinkPrice: TextView = itemView.findViewById(R.id.tvDrinkPrice)
-        val tvTemperature: TextView = itemView.findViewById(R.id.tvTemperature) // Tambahkan ini
+        val tvTemperature: TextView = itemView.findViewById(R.id.tvTemperature)
         val btnAdd: Button = itemView.findViewById(R.id.btnAdd)
     }
 
@@ -29,6 +31,9 @@ class DrinkAdapter(
 
     override fun onBindViewHolder(holder: DrinkViewHolder, position: Int) {
         val drink = drinkList[position]
+
+        // Set gambar minuman
+        holder.ivDrinkImage.setImageResource(drink.imageResId)
 
         holder.tvDrinkName.text = drink.name
         holder.tvDrinkDescription.text = drink.description

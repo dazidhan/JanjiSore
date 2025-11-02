@@ -40,8 +40,8 @@ class HomeActivity : AppCompatActivity() {
     private fun setupRecyclerView() {
         val drinkList = DummyData.getDrinkMenu()
         drinkAdapter = DrinkAdapter(drinkList) { drink ->
-            // Navigate to OrderActivity when a drink is clicked
-            val intent = Intent(this, OrderActivity::class.java)
+            // Navigate langsung ke CheckoutAddressActivity ketika minuman dipilih
+            val intent = Intent(this, CheckoutAddressActivity::class.java)
             intent.putExtra("SELECTED_DRINK", drink)
             startActivity(intent)
         }
