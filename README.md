@@ -74,7 +74,7 @@ Berikut adalah beberapa tampilan dari alur aplikasi JanjiSore
     </td>
     <td align="center">
       <strong>Pemesanan Sukses</strong><br>
-      <img src="image/sukses.jpeg" alt="Tampilan Pemesanan Sukses" width="250px"/>
+      <img src="image/sukses.jpeg" alt="Tampilan Pemesanan Sukses" width="150px"/>
     </td>
   </tr>
 </table>
@@ -101,4 +101,5 @@ Jika Anda ingin berkontribusi atau sekadar mencoba aplikasi ini, ikuti langkah-l
 ## 👤 Kontributor
 
 * **[dazidhan](https://github.com/dazidhan)** - Pengembang Utama
+
 
